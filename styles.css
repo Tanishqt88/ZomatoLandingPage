@@ -27,7 +27,6 @@
     display: flex;
     gap: 18px;
 }
-
 .NavBarMenuContainer .UserIcon{
     display: flex;
     height: 25px;
@@ -38,6 +37,59 @@
     border: solid 1px white;
     display: none;
 }
+
+
+
+.HeroSectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: calc(60vh - 65px);
+}
+.HeroSectionLogo{
+    width: 200px;
+    height: 40px;
+    /* height: auto; */
+}
+.HeroSectionTitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 380;
+}
+.HeroSectionInputContainer{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.InputContainerLocation, 
+.InputContainerSearch{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.InputContainerLocation{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+.HeroSectionInputContainer .fa-magnifying-glass{
+    color: #7c7a7a;
+}
+.InputContainerSearch{
+    width: 65%;
+}
+.HeroSectionInputContainer .fa-location-dot{
+    color: #fb6060;
+}
+
+
+
 
 /* Screen size is from 0-600 i.e. smaller screen size/mobile */
 @media only screen and (max-width: 600px){
@@ -50,4 +102,21 @@
     .HeroSection{
         min-height: 80vh;
     }
+    .HeroSectionContainer{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        height: calc(80vh - 40px);
+    }
+    .InputContainerLocation, 
+    .InputContainerSearch{
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .HeroSectionTitle{
+        font-size: 18px;
+        width: 95%;
+    }
 }
+
