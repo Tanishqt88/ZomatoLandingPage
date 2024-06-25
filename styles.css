@@ -282,6 +282,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.InputContainer{
+    flex-wrap: wrap;
+}
 .right .DownloadAppContainer{
     display: flex;
     flex-direction: column;
@@ -290,9 +293,6 @@
 .right .DownloadAppContainer h5{
     font-weight: 400;
     color: gray;
-}
-.InputContainer{
-    flex-wrap: wrap;
 }
 .right .DownloadAppContainer div{
     display: flex;
