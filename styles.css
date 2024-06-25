@@ -345,4 +345,25 @@
 }
 
 
+/* 0 - 1300 */
+@media only screen and (max-width: 1300px){
+    .GetTheApp .SemiContainer .left,
+    .GetTheApp .SemiContainer .right{
+        flex: 1;
+    }
+    .GetTheApp .SemiContainer{
+        width: 80%;
+    }
+}
 
+
+/* 0 - 900 */
+@media only screen and (max-width: 900px){
+    .GetTheApp{
+        padding: 2rem 0;
+    }
+    .GetTheApp .SemiContainer{
+        width: 95%;
+        flex-direction: column;
+    }
+}
