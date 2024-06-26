@@ -207,13 +207,18 @@
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+
+
+/* ------------------------GET APP SECTION------------------------------------------------------- */
 .GetTheApp{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 246, 238);
+    background-color: rgba(255,251,247);
     width: 100%;
     padding: 3rem 6rem;
+    margin-bottom: 0;
 }
 .GetTheApp .SemiContainer{
     width: 60%;
@@ -300,10 +305,139 @@
 }
 .right .DownloadAppContainer div img{
     width: 35%;
+    cursor: pointer;
 }
 
 
 
+/* ------------------------EXPLORE SECTION------------------------------------------------------- */
+H1{
+    font-weight: 400;
+    font-size: 30px;
+    /* text-align: left; */
+}
+.Explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgba(252,252,252);
+    padding-top: 20px;
+}
+.Explore .ExploreSectionDropMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 200%; */
+}
+.ExploreSectionDropMenu .DropMenu{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin: 20px 0px;
+    padding: 17px 30px;
+    border: 1.5px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 200%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* ------------------------FOOTER SECTION------------------------------------------------------- */
+.Footer{
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.991);
+    padding-top: 20px;
+}
+.FooterSection1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.FooterSection1 img{
+    width: 130px;
+}
+.Section1ButtonContainer{
+    display: flex;
+    gap: 1rem;
+}
+.Section1ButtonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.NavigationContainer{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+.LinkContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.LinkContainer h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+.FooterLink{
+    text-decoration: none;
+    color: gray;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+.FooterLink:hover{
+    color: black;
+}
+.SectionLinkContainer button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+.SectionLinkContainer button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.FooterSectionLogo{
+    width: 100%;
+}
+.Disclaimer{
+    width: 95%;
+    color: gray;
+    margin: auto;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
 
 
 
@@ -365,5 +499,42 @@
     .GetTheApp .SemiContainer{
         width: 95%;
         flex-direction: column;
+    }
+}
+
+
+
+
+/* TO BE DELETED AND RECODED LATER DUE TO CHANGE IN CODE FOR DROP DOWN MENU */
+@media only screen and (max-width: 950px){
+    .ExploreSectionDropMenu .DropMenu{
+        width: 150%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .ExploreSectionDropMenu .DropMenu{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 470px){
+    .ExploreSectionDropMenu .DropMenu{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    .NavigationContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 500px){
+    .NavigationContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 320px){
+    .NavigationContainer{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
