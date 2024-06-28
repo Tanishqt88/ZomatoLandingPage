@@ -311,41 +311,36 @@
 
 
 /* ------------------------EXPLORE SECTION------------------------------------------------------- */
-H1{
-    font-weight: 400;
-    font-size: 30px;
-    /* text-align: left; */
+.BgColorTag{
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
 }
 .Explore{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0px;
-    margin-left: 0px;
-    background-color: rgba(252,252,252);
-    padding-top: 20px;
+    width: 68%;
 }
-.Explore .ExploreSectionDropMenu{
+.ExploreContent{
+    display: flex;
+    flex-direction: column; 
+}
+.ExploreContent h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.ExploreContent .ExploreDropMenu{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* width: 200%; */
 }
-.ExploreSectionDropMenu .DropMenu{
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    margin: 20px 0px;
-    padding: 17px 30px;
-    border: 1.5px solid rgb(196, 196, 196);
-    border-radius: 5px;
+.ExploreContent .ExploreDropMenu .DropMenu{
     font-size: 20px;
+    color: gray;
     font-weight: 200;
-    width: 200%;
-    background-color: rgb(255, 255, 255);
+    width: 95%;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 
@@ -356,6 +351,8 @@ H1{
     width: 100%;
     background-color: rgba(248, 248, 248, 0.991);
     padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .FooterSection1{
     display: flex;
@@ -506,7 +503,7 @@ H1{
 
 
 /* TO BE DELETED AND RECODED LATER DUE TO CHANGE IN CODE FOR DROP DOWN MENU */
-@media only screen and (max-width: 950px){
+/* @media only screen and (max-width: 950px){
     .ExploreSectionDropMenu .DropMenu{
         width: 150%;
     }
@@ -520,7 +517,7 @@ H1{
     .ExploreSectionDropMenu .DropMenu{
         width: 70%;
     }
-}
+} */
 
 
 @media only screen and (max-width: 900px){
